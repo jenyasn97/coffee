@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import "_nullstyle.scss";
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+
+.container {
+  max-width: 1470px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 575px) {
+    padding: 0 30px;
+  }
+}
+
+span {
+  color: #ff7a00;
+}
+
+.header {
+  &__container {
+    background: #fff6ed;
+  }
+
+  &__title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    @media (max-width: 1375px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__card-item {
+    max-width: 375px;
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+  }
+
+  &__card-imeg {
+    margin-bottom: 21px;
+    @media (max-width: 575px) {
+      width: 300px;
+    }
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 6px;
+  }
+
+  &__card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 42px;
+  }
+}
+
+.footer {
+  &__container {
+    margin-top: 24px;
+    padding-bottom: 30px;
+    display: flex;
+    @media (max-width: 1375px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    flex: 1 0 50%;
+    @media (max-width: 1375px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    padding-top: 36px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 11px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+
+  &__left {
+    flex: 1 0 50%;
+    background: url(../img/ellipse.svg) top left no-repeat;
+    @media (max-width: 1375px) {
+      width: 100%;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+  &__list-top {
+    display: flex;
+    margin-top: 69px;
+    gap: 90px;
+    margin-left: 112px;
+    @media (max-width: 1375px) {
+      justify-content: center;
+      margin-left: 0px;
+      gap: 25px;
+    }
+  }
+
+  &__list-bootom {
+    display: flex;
+    margin-top: 30px;
+    gap: 90px;
+    margin-left: 182px;
+    @media (max-width: 1375px) {
+      justify-content: center;
+      margin-left: 0px;
+      gap: 25px;
+    }
+  }
+}
